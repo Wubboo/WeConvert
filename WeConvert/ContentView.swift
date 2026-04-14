@@ -9,15 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Form{
+                Section(header: Text("Pick a format")){
+                    
+                }
+            }
+            .navigationTitle("WeConvert")
         }
-        .padding()
+        
     }
 }
+    
 
 #Preview {
     ContentView()
